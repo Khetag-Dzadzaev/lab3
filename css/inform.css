@@ -1,0 +1,710 @@
+/*--------------------------шрифты и прочее--------------------------*/
+
+@font-face {
+    font-family: "ReformaGroteskMediumC";
+    src: local("ReformaGroteskMediumC"),
+         url("../fonts/ReformaGroteskMediumC.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "ReformaGroteskDemiC";
+    src: local("ReformaGroteskDemiC"),
+         url("../fonts/ReformaGroteskDemiC.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "ReformaGroteskBoldC";
+    src: local("ReformaGroteskBoldC"),
+         url("../fonts/ReformaGroteskBoldC.ttf") format("truetype");
+    font-weight: normal;
+}
+
+body {
+	background-color: #141414;
+	color: #FFFFFF;
+	margin: 0;
+}
+
+.container {
+	max-width: 1320px;
+	margin: 0 auto;
+}
+
+/*--------------------------меню--------------------------*/
+
+header {
+	background-image: url("../img/banner.jpg");
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+	min-height: 1000px;
+    font-family: "ReformaGroteskMediumC";
+}
+
+.higher-header__inner {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+}
+
+.header__menu {
+	display: flex;
+	list-style: none;
+	font-size: 24px;
+	margin-top: 44px;
+	padding-left: 0;
+}
+
+.menu__item a {
+	text-decoration: none;
+	color: #ffffff;
+	letter-spacing: 0.04em;
+}
+
+.header__menu .menu__item + .menu__item {
+	margin-left: 40px;
+}
+
+.burger-menu {
+	margin-top: 44px;
+}
+
+.list {
+	display: none;
+	list-style: none;
+	background-color: #DB3138;
+	padding: 20px;
+	text-align: center;
+	margin-top: 3px;
+	border-radius: 2px;
+	position: absolute;
+}
+
+.list-item a {
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 24px;
+	letter-spacing: 0.04em;
+	transition: all .2s;
+}
+
+.list-item a:hover {
+	font-weight: bold;
+}
+
+.menu-checkbox {
+	display: none;
+	cursor: pointer;
+}
+
+.burger-menu:hover .list {
+	display: block;
+}
+
+.middle-header__inner {
+	text-align: center;
+}
+
+h1 {
+	font-family: "ReformaGroteskBoldC";
+	font-size: 64px;
+	max-width: 636px;
+	color: #DB3138;
+	margin: 160px auto 0;
+ 	line-height: 80px;
+}
+
+.middle-header__decoration {
+	margin-top: 35px;
+}
+
+.middle-header__content {
+	max-width: 437px;
+	margin: 30px auto;
+	margin-top: 30px;
+	font-family: "ReformaGroteskMediumC";
+	font-size: 40px;
+	line-height: 50px;
+}
+
+.middle-header__button {
+	margin-top: 115px;
+	text-align: center;
+}
+
+.middle-header__button a {
+	font-family: "ReformaGroteskDemiC";
+	font-size: 24px;
+	color: #ffffff;
+	background: linear-gradient(to right, #DB3138 50%, transparent 50%);
+	text-decoration: none;
+	letter-spacing: 0.04em;
+	padding: 17px 20px;
+	text-align: center;
+}
+
+.advantage__inner {
+	margin-top: 180px;
+}
+
+.advantage__inner h3 {
+	font-family: "ReformaGroteskDemiC";
+	font-size: 32px;
+	letter-spacing: 0.07em;
+	position: relative;
+}
+
+.advantage__inner {
+	display: flex;
+    justify-content: space-between;
+}
+
+.advantage__inner p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+	font-family: 'ReformaGroteskMediumC';
+}
+
+.advantage__left-container {
+	text-align: center;
+}
+
+.advantage__left-container-text {
+	font-family: "ReformaGroteskDemiC";
+	font-size: 18px;
+	letter-spacing: 0.06em;
+	line-height: 27px;
+	text-transform: uppercase;
+	width: 422px;
+	margin: 40px auto;
+	position: relative;
+}
+
+.advantage__left-container-text:before {
+	content: '';
+	background-image: url("../img/rhombus-button.svg");
+	width: 71px;
+	height: 71px;
+	position: absolute;
+	transform: rotate(-180deg);
+	left: -105px;
+	top: -10px;
+}
+
+.advantage__left-container-text:after {
+	content: '';
+	background-image: url("../img/rhombus-button.svg");
+	width: 71px;
+	height: 71px;
+	position: absolute;
+	right: -105px;
+	top: -10px;
+}
+
+.advantage__left-container-img {
+	margin-top: 15px;
+}
+
+.advantage__right-container-box-title{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-family: 'ReformaGroteskDemiC';
+}
+
+.line_rombs{
+  content: url(/img/four-rhombus-red.svg);
+  text-align: center;
+  margin-left: 257px;
+  width: 146px;
+  height: 14px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.servis{
+  margin-top: 180px;
+}
+
+.servis_title{
+  width: 600px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-family: 'ReformaGroteskDemiC';
+  margin-left: 350px;
+}
+
+.servis_romb{
+  margin-top: 40px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.servis_bloks{
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.servis_block{
+  width: 306px;
+  height: 428px;
+  border: 1px solid #898989;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.servis_block_info{
+  text-align: center;
+  position: relative;
+}
+
+.servis_block_title{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-family: 'ReformaGroteskDemiC';
+}
+
+.servis_block_textBlock{
+  display: flex;
+  margin: 0 50px;
+}
+
+.servis_block_text{
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-family: 'ReformaGroteskDemiC';
+
+}
+
+.servis_block_button{
+  display: inline-block;
+  margin-top: 35px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-family: 'ReformaGroteskDemiC';
+  text-decoration: none;
+  padding: 10px 35px 6px 20px;
+  margin-left: 15px;
+}
+
+.servis_block_button::before{
+  content: url(/img/Rectangle\ 27.svg);
+  position: absolute;
+  top: 200px;
+  left: 97px;
+  z-index: -1;
+}
+
+.advantage__right_componi{
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.answer_any_text_and_social_block{
+  display: flex;
+  gap: 70px;
+  margin-left: 142px;
+  flex-wrap: wrap;
+}
+
+.our_works_title{
+  margin-top: 180px;
+}
+
+.our_works_title{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-family: 'ReformaGroteskDemiC';
+}
+
+.our_works_rumbs{
+  content: url(/img/four-rhombus-red.svg);
+  text-align: center;
+  margin-left: 597px;
+  width: 146px;
+  height: 14px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+
+.our_works_img_block_line_img{
+  width: 225px;
+  height: 185px;
+}
+
+.our_works_img_block_line{
+  display: flex;
+  flex-direction: row;
+}
+
+.line_row_reverse{
+  flex-direction: row-reverse;
+}
+
+.footer{
+  margin-top: 120px;
+}
+
+.footer_answer_any_question_title{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-family: 'ReformaGroteskDemiC';
+  margin-bottom: 40px;
+}
+
+.footer_answer_any_question_rumbs{
+  content: url(/img/four-rhombus-red.svg);
+  text-align: center;
+  margin-left: 597px;
+  width: 146px;
+  height: 14px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.answer_any_name_and_tel{
+  margin-bottom: 24px;
+  margin-left: 142px;
+  display: flex;
+  gap: 24px;
+}
+
+.answer_any_form{
+  width: 300px;
+  height: 47px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #141414;
+  font-family: 'ReformaGroteskDemiC';
+  padding-left: 13px;
+  border: solid 1px rgba(137, 137, 137, 1);
+}
+
+.border_red{
+  border:solid 1px rgba(219, 49, 56, 1);
+}
+
+.answer_any_form2{
+  width: 526px;
+  height: 135px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #141414;
+  font-family: 'ReformaGroteskDemiC';
+  padding-left: 13px;
+  padding-top: 15px;
+  border: solid 1px rgba(137, 137, 137, 1);
+  resize: none;
+}
+
+.answer_any_form2::placeholder{
+  font-family: 'ReformaGroteskDemiC';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.answer_any_social_block{
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.answer_any_social_img{
+  border: 1px solid #898989;
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.answer_any_button_and_info_block{
+  margin-top: -50px;
+  width: 1000px;
+  display: flex;
+  gap: 246px;
+  position: relative;
+}
+
+.answer_any_button{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-family: 'ReformaGroteskDemiC';
+  text-decoration: none;
+  margin-top: 10px;
+  padding-left: 25px;
+}
+
+.answer_any_button::before{
+  position: absolute;
+  content: url(/img/Rectangle\ 27.svg);
+  z-index: -1;
+  left: 17px;
+  top: 6px;
+}
+
+.answer_any_info_block{
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+}
+
+.answer_any_info_text{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-family: 'ReformaGroteskDemiC';
+}
+
+.gps::before{
+  position: absolute;
+  left: 342px;
+  content: url(/img/carbon_location-filled.svg);
+}
+
+.tel {
+  margin-top: 15px;
+  margin-right: 92px;
+}
+
+.tel::before{
+  position: absolute;
+  left: 342px;
+  content: url(/img/ci_phone.svg);
+}
+
+.email{
+  margin-top: 15px;
+}
+
+.email::before{
+  position: absolute;
+  left: 536px;
+  content: url(/img/fluent_mail-28-filled.svg);
+}
+
+.footer_line{
+  margin-top: 97px;
+  width: 1347px;
+  border: solid 1px rgba(137, 137, 137, 1);
+  margin-bottom: 34px;
+}
+
+.footer_info{
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-bottom: 90px;
+}
+
+.footer_info_text__text{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: 
+  rgba(255, 255, 255, 1);
+  font-family: 'ReformaGroteskDemiC';
+}
+
+.footer_info_button{
+  display: flex;
+  gap: 40px;
+}
+
+.footer_info_button_text_width_1{
+  width: 160px;
+}
+
+.footer_info_button_text_width_2{
+  width: 150px;
+}
+
+.footer_info_button_text_width_3{
+  width: 100px;
+}
+
+.footer_info_button_text{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  font-family: 'ReformaGroteskMediumC';
+  text-decoration: none;
+}
+
+.the_cost_of_full_car_pasting_title_flex{
+  display: flex;
+  justify-content: center;
+}
+
+.the_cost_of_full_car_pasting_title{
+  width: 600px;
+  margin-top: 180px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-family: 'ReformaGroteskDemiC';
+}
+
+.the_cost_of_full_car_pasting_rombs{
+  content: url(/img/four-rhombus-red.svg);
+  text-align: center;
+  margin-left: 597px;
+  width: 146px;
+  height: 14px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.the_cost_of_full_car_pasting_table_line{
+  width: 1300px;
+  border: solid 1px rgba(137, 137, 137, 1);
+}
+
+.the_cost_of_full_car_pasting_table_info{
+  display: flex;
+  margin: 25px 0;
+  gap: 80px;
+}
+
+.the_cost_of_full_car_pasting_table_info_text{
+  width: 70px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-family: 'ReformaGroteskDemiC';
+  padding-left: 18px;
+}
+
+.text_red{
+  color: rgba(219, 49, 56, 1);
+}
+
+.text_width_1{
+  width: 220px;
+}
+
+.text_width_4{
+  width: 220.5px;
+}
+
+.text_width_2{
+  width: 400px;
+}
+
+.text_margin_left{
+  margin-left: 20px;
+}
+
+.cens_margin_left_1{
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.cens_margin_left_2{
+  margin-top: 10px;
+  margin-left: 110px;
+}
+
+.cens_margin_left_3{
+  margin-top: 10px;
+  margin-left: 110px;
+}
+
+.cens_margin_left_4{
+  margin-top: 10px;
+  margin-left: 110px;
+}
